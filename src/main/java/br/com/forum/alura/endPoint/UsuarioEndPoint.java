@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Arrays;
 
 @RestController
-@RequestMapping(path = "/")
+@RequestMapping(path = "/usuario")
 public class UsuarioEndPoint {
     private UsuarioRepository usuarioRepository;
 
