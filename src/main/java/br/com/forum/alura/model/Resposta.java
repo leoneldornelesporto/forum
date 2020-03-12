@@ -1,5 +1,7 @@
 package br.com.forum.alura.model;
 
+import br.com.forum.alura.dto.RespostaAtualizaoForm;
+
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import java.time.LocalDateTime;
@@ -21,6 +23,10 @@ public class Resposta extends AbstractEntity{
 	public Resposta(String mensagem, Topico topico) {
 		this.mensagem = mensagem;
 		this.topico = topico;
+	}
+
+	public Resposta(RespostaAtualizaoForm respostaAtualizaoForm, Topico topico) {
+		super();
 	}
 
 	public String getMensagem() {
